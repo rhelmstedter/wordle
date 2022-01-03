@@ -1,0 +1,18 @@
+---
+driver=<class 'textual._linux_driver.LinuxDriver'>
+Mount() >>> CalculatorApp(title='Calculator Test')
+Mount() >>> DockView(name='DockView#1')
+Mount() >>> Calculator(name='Calculator#1')
+Mount() >>> Calculator(name='Calculator#1')
+view.forwarded Key(key='escape')
+Key(key='escape') >>> CalculatorApp(title='Calculator Test')
+view.forwarded Key(key='i')
+Key(key='i') >>> CalculatorApp(title='Calculator Test')
+view.forwarded Key(key='ctrl+c')
+Key(key='ctrl+c') >>> CalculatorApp(title='Calculator Test')
+ACTION CalculatorApp(title='Calculator Test') quit
+CLOSED CalculatorApp(title='Calculator Test')
+PROCESS END
+disable_input elapsed 0.00ms
+tcsetattr elapsed 0.07ms
+set_alt_screen False, show cursor elapsed 0.19ms
